@@ -4,7 +4,55 @@
 	<title>pagina no oficial de la chica fideo</title>
 </head>
 <body>
- 	<h1>pagina sobre la serie de pucca alias "la chica fideo"</h1>
- 	<h2>por nohemi</h2>
+ 	<h1>PRACTICA DE SUMAR DOS NUMEROS</h1>
+ 	<h3>Por nohemi</h3>
+ 	<H2>Clase del martes</H2>
+<FORM name="registro">
+	<table>
+		<tr>
+			<tr><td>Numero:</td>
+			 <td><input type="text" name="dato1" id="dato1"></td></tr>
+			<tr><td>Numero:</td>
+			 <td><input type="text" name="dato2" id="dato2"></td></tr>
+		</tr>
+		<td>OPERACION</td>
+		<td><input type="button" name="ENVIAR" value="+" onclick="sumadedatos()">
+		<input type="button" name="ENVIAR" value="-" onclick="restadedatos()">
+		<input type="button" name="ENVIAR" value="x" onclick="muliplicaciondedatos()">
+		<input type="button" name="ENVIAR" value="/" onclick="diviciondedatos()"></td>
+
+	</table>
+	<table>
+		<tr>
+			<td><b>RESULTADO</b></td>
+			<td><input type="text" name="jin" id="jin"></td>
+		</tr>
+	</table>
+</FORM>
+<script type="text/javascript">
+	function sumadedatos(){
+		var d1=parseInt(document.getElementById("dato1").value);
+		var d2=parseInt(document.getElementById("dato2").value);
+		document.registro.jin.value=d1+d2;		// body...
+	}
+
+	function restadedatos(){
+		var d1=parseInt(document.getElementById("dato1").value);
+		var d2=parseInt(document.getElementById("dato2").value);
+		document.registro.jin.value=d1-d2;		// body...
+	}
+
+	function muliplicaciondedatos(){
+		var d1=parseInt(document.getElementById("dato1").value);
+		var d2=parseInt(document.getElementById("dato2").value);
+		document.registro.jin.value=d1*d2;		// body...
+	}
+
+	function diviciondedatos(){
+		var d1=parseInt(document.getElementById("dato1").value);
+		var d2=parseInt(document.getElementById("dato2").value);
+		document.registro.jin.value=d1/d2;		// body...
+	}
+</script>
 </body>
 </html>
